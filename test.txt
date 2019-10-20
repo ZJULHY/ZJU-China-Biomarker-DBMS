@@ -1,0 +1,20 @@
+create table Biomarker(
+	id int,
+	type char(10),
+	BiomarkerName char(30) unique,
+	Application char(40),
+	primary key(id)
+);
+
+insert into Biomarker values(10001,'DNA','P53Mutant','Diagnosis');
+insert into Biomarker values(20001,'RNA','microRNA-10b','Prognosis');
+insert into Biomarker values(20002,'RNA','microRNA-150','Treatment');
+insert into Biomarker values(20003,'RNA','microRNA-144','Progmosis');
+insert into Biomarker values(20004,'RNA','microRNA-21','Diagnosis');
+insert into Biomarker values(20005,'RNA','microRNA-32','Prognosis');
+insert into Biomarker values(20006,'RNA','microRNA-183','Prognosis');
+insert into Biomarker values(20007,'RNA','microRNA-25','Prognosis');
+
+select * from Biomarker£»
+
+select Biomarkername from Biomarker where id == 20005;
